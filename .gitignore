@@ -1,1 +1,4 @@
-STW/Export-Embedding/*.csv
+# Ignore __pycache__ , .ipynb_checkpoints and *.csv in all subdirectories of STW
+STW/**/*.csv
+STW/**/__pycache__/
+STW/**/.ipynb_checkpoints/
