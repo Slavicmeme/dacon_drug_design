@@ -10,7 +10,6 @@ The dataset used in this project is embedded and available in the following CSV 
 ## original data
 
 - [Database] https://drive.google.com/drive/folders/1SUATfOOw7MedfSlIak3yzMNTPzIy0SvY?usp=sharing
-
 저장 형식
 
 - `train_data_img.csv` - train_data에 image_feature_vector column에 추가한 csv  
