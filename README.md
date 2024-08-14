@@ -13,11 +13,11 @@ The dataset used in this project is embedded and available in the following CSV 
 
 저장 형식
 
-train_data_img.csv - train_data에 image_feature_vector column에 추가한 csv
-val_data_img.csv - valdiation data에 image_feature_vector column에 추가한 csv
+- `train_data_img.csv` - train_data에 image_feature_vector column에 추가한 csv  
+- `val_data_img.csv` - valdiation data에 image_feature_vector column에 추가한 csv
 
-train_data_smi_img.csv - train_data에 image, smi feature vector column에 추가한 csv
-val_data_smi_img.csv -valdiation data에 image, smi feature vector column에 추가한 csv
+- `train_data_smi_img.csv` - train_data에 image, smi feature vector column에 추가한 csv  
+- `val_data_smi_img.csv` - valdiation data에 image, smi feature vector column에 추가한 csv
 
-train_data_smi_img_protein.csv - train_data에 image, smi, protein feature vector column에 추가한 csv
-val_data_smi_img_protein.csv -valdiation data에 image, smi, protein feature vector column에 추가한 csv
+- `train_data_smi_img_protein.csv` - train_data에 image, smi, protein feature vector column에 추가한 csv  
+- `val_data_smi_img_protein.csv` - valdiation data에 image, smi, protein feature vector column에 추가한 csv
