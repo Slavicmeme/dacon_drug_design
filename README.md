@@ -9,15 +9,19 @@ The dataset used in this project is embedded and available in the following CSV 
 
 ## original data
 
-- [Database] https://drive.google.com/drive/folders/1SUATfOOw7MedfSlIak3yzMNTPzIy0SvY?usp=sharing
+- [Google drive link](https://drive.google.com/drive/folders/1SUATfOOw7MedfSlIak3yzMNTPzIy0SvY?usp=sharing)<br/>
 
 저장 형식
 
-train_data_img.csv - train_data에 image_feature_vector column에 추가한 csv
-val_data_img.csv - valdiation data에 image_feature_vector column에 추가한 csv
+- `train_data_img.csv` - train_data에 image_feature_vector column에 추가한 csv  
+- `val_data_img.csv` - valdiation data에 image_feature_vector column에 추가한 csv
 
-train_data_smi_img.csv - train_data에 image, smi feature vector column에 추가한 csv
-val_data_smi_img.csv -valdiation data에 image, smi feature vector column에 추가한 csv
+- `train_data_smi_img.csv` - train_data에 image, smi feature vector column에 추가한 csv  
+- `val_data_smi_img.csv` - valdiation data에 image, smi feature vector column에 추가한 csv
 
-train_data_smi_img_protein.csv - train_data에 image, smi, protein feature vector column에 추가한 csv
-val_data_smi_img_protein.csv -valdiation data에 image, smi, protein feature vector column에 추가한 csv
+- `train_data_smi_img_protein.csv` - train_data에 image, smi, protein feature vector column에 추가한 csv  
+- `val_data_smi_img_protein.csv` - valdiation data에 image, smi, protein feature vector column에 추가한 csv
+
+## OCSR settings for molecular image feature vector
+[MolScribe repository](https://github.com/thomas0809/MolScribe)
+environment setting and usage follow the MolScribe repository
