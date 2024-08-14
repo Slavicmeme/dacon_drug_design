@@ -2,3 +2,7 @@
 STW/**/*.csv
 STW/**/__pycache__/
 STW/**/.ipynb_checkpoints/
+ckpt/
+train_data/
+model/.ipynb_checkpoints/
+.ipynb_checkpoints/
