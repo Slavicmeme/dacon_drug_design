@@ -1,0 +1,17 @@
+name: dacon
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - jupyter
+  - pytorch
+  - numpy
+  - pandas
+  - pip
+  - pip:
+    - scikit-learn==1.5.1
+    - sentence-transformers==3.0.1
+    - langchain
+    - langchain-community
+    - langchain-openai
+    - transformers
