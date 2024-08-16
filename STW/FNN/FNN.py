@@ -64,21 +64,21 @@ class AdvancedFNNModel(nn.Module):
         self.bn3 = nn.BatchNorm1d(32)
         self.relu3 = nn.ReLU()
         
-        self.fc4 = nn.Linear(32, input_dim)  # 또는 output_dim으로 설정 가능
+        self.fc4 = nn.Linear(32, input_dim)
         self.bn4 = nn.BatchNorm1d(input_dim)
     
     def forward(self, x):
         x = self.relu1(self.bn1(self.fc1(x)))
         x = self.relu2(self.bn2(self.fc2(x)))
         x = self.relu3(self.bn3(self.fc3(x)))
-        x = self.bn4(self.fc4(x))  # 마지막 층에는 활성화 함수가 없을 수도 있습니다
+        x = self.bn4(self.fc4(x))
         return x
 
 def extract_features_from_csv(csv_file):
     # 데이터셋 로드 및 모델 정의
     dataset = MolecularDataset(csv_file=csv_file)
-    dataloader = DataLoader(dataset, batch_size=32, shuffle=False)  # 배치 크기는 필요에 따라 조절 가능
-    model = AdvancedFNNModel(input_dim=dataset.features.shape[1]).to(device)  # 모델을 CUDA 장치로 이동
+    dataloader = DataLoader(dataset, batch_size=32, shuffle=False)
+    model = AdvancedFNNModel(input_dim=dataset.features.shape[1]).to(device)
 
     # 모델을 평가 모드로 전환 (필요에 따라)
     model.eval()
@@ -86,11 +86,11 @@ def extract_features_from_csv(csv_file):
     # 네트워크 층을 거친 피처를 저장할 리스트
     network_features = []
 
-    with torch.no_grad():  # 역전파 계산을 하지 않기 위해 no_grad 사용
+    with torch.no_grad():
         for data in dataloader:
-            data = data.float().to(device)  # 데이터를 float 타입으로 변환하고 CUDA 장치로 이동
+            data = data.float().to(device)
             output = model(data)
-            network_features.append(output.cpu().numpy())  # 결과를 numpy 배열로 변환하여 저장 (CPU로 이동)
+            network_features.append(output.cpu().numpy())
 
     # 네트워크를 통과한 피처를 하나의 numpy 배열로 병합
     network_features = np.concatenate(network_features, axis=0)

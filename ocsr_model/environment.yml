@@ -1,0 +1,23 @@
+name: molscribe
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.9
+  - pytorch>=2.1.2
+  - torchvision>=0.16.1
+  - pytorch-cuda=12.1
+  - rdkit>=2024.03.1
+  - pandas=2.2.2
+  - matplotlib=3.8.4
+  - tensorboardx=2.6.2.2
+  - pip
+  - pip:
+      #- opencv-python==4.5.5.64
+    - opencv-python>=4.5.5.64
+    - transformers>=4.5.1
+    - SmilesPE==0.0.3
+    - OpenNMT-py==2.2.0
+    - albumentations==1.1.0
+    - timm==0.5.4
