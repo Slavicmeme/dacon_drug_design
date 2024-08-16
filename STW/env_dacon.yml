@@ -12,8 +12,10 @@ dependencies:
     - scikit-learn==1.5.1
     - sentence-transformers==3.0.1
     - langchain
-    - langchain-community
     - langchain-openai
-    - transformers
+    - langchain-community
     - langchain_experimental
+    - transformers
+    - selenium
+    - wikipedia-api
     - wikipedia
