@@ -17,3 +17,5 @@ dependencies:
     - transformers
     - langchain_experimental
     - wikipedia
+    - google-search-results
+    - xmltodict
