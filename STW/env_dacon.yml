@@ -19,3 +19,10 @@ dependencies:
     - wikipedia
     - google-search-results
     - xmltodict
+    - langchain-openai
+    - langchain-community
+    - langchain_experimental
+    - transformers
+    - selenium
+    - wikipedia-api
+    - wikipedia
