@@ -1,0 +1,14 @@
+name: dacon
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.9
+  - pytorch
+  - pytorch-cuda=12.1
+  - rdkit
+  - pandas
+  - matplotlib
+  - tensorboardx
+  - tqdm
+  - numpy
